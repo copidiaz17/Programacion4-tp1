@@ -4,100 +4,142 @@ Trabajo practico N1
 Integrantes:
             Diaz Figueroa Jose Alejandro
             Romano Galvan Romina 
+
+Link al sitio web: https://copidiaz17.github.io/Programacion4-tp1/            
             -->
 
+<!--Paleta de colores extraida de https://colorhunt.com
+Color Color 1:#F3F3E0 (Background) 
+Color 2: #133E87 (Header y Footer) 
+Color 3: #608BC1 (Encabezados de Tabla) 
+Color 4: #CBDCEB (Hover Links) */
+-->   
+
+<!--Icono utilizado en el head y en el header descargados de flaticon
+--> 
+            
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Canal 13</title>
+    <style>
+        .carousel-item img {
+            max-height: 500px; /* Ajusta el valor según sea necesario */
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        
-        <h1>CANAL 13</h1>
-        <nav>
-            <a href="">Programas</a>
-            <a href="">Vivo</a>
-            <a href="">Noticias</a>
-            <a href="">Quienes Somos</a>
-            <a href="contacto.html">Contacto</a>
+        <div id="header-content">
+            <h1>CANAL 13</h1>
+            <img src="icono.ico" class="icon" alt="Canal 13">
+        </div>
 
+        <nav class="menu sticky">
+            <a href="" class="link-nav">Programas</a>
+            <a href="" class="link-nav">Vivo</a>
+            <a href="" class="link-nav">Noticias</a>
+            <a href="" class="link-nav">Quienes Somos</a>
+            <a href="contacto.html" class="link-nav">Contacto</a>
         </nav>
     </header>
-<main>
-        <ol>Programas mas vistos
-            <li>Domingos de futbol</li>
+
+    <main>
+        <ol class="lista">Programas más vistos
+            <li>Domingos de fútbol</li>
             <li>Casados con hijos</li>
             <li>Los Simpsons</li>
             <li>El diario de Mariana</li>
-
         </ol>
 
-        <ul>Proximos Programas
+        <ul class="lista">Próximos Programas
             <li>Noticiero 13</li>
             <li>El diario de Mariana</li>
             <li>Viajes por el mundo</li>
             <li>Cocina en casa</li>
-
         </ul>
 
-        <table>Rating Mensual
+        <table class="tabla">Rating Mensual
             <tr>
                 <th>Rating</th>
                 <th>Canal</th>
             </tr>
-
             <tr>
                 <td>17.8</td>
                 <td>Canal 13</td>
             </tr>
-
             <tr>
                 <td>14.3</td>
                 <td>Canal 9</td>
             </tr>
-
             <tr>
                 <td>10.5</td>
                 <td>Telefe</td>
             </tr>
-
             <tr>
                 <td>7.7</td>
                 <td>Canal 7</td>
             </tr>
-
         </table>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="barasiii2.jpg" class="d-block w-100" alt="Imagen 1">
+              </div>
+              <div class="carousel-item">
+                <img src="noticiero.jpg" class="d-block w-100" alt="Imagen 2">
+              </div>
+              <div class="carousel-item">
+                <img src="noticiero 2.jpg" class="d-block w-100" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="santos.jpg" class="d-block w-100" alt="Imagen 3">
+              </div>
+            </div>   
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>   
+
 
         <audio controls autoplay loop src="nightfall-future-bass-music-228100.mp3"></audio>
 
         <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7055.745232605124!2d-64.25006969999997!3d-27.844452999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1727629129711!5m2!1ses-419!2sar" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Nuestra Ubicacion</iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7055.745232605124!2d-64.25006969999997!3d-27.844452999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1727629129711!5m2!1ses-419!2sar" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-     <div>
-       
+        <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/etCudN0ALKs?si=kbMgYDFlVu9_GhAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cb12KmMMDJA?si=Ga65vcXLi0-C3-KZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-    </div> 
-    
-    
-        
-       
-
-            
-            
-        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cb12KmMMDJA?si=Ga65vcXLi0-C3-KZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </main>
 
     <footer>
-
         <p>&copy; 2024 Canal 13. Todos los derechos reservados.</p>
         <nav>
             <a href="">Política de Privacidad</a> |
@@ -105,13 +147,12 @@ Integrantes:
             <a href="contacto.html">Contacto</a>
         </nav>
         <div>
-            <a href="https://www.facebook.com/canal13" target="_blank">Facebook</a> |
-            <a href="https://www.twitter.com/canal13" target="_blank">Twitter</a> |
-            <a href="https://www.instagram.com/canal13" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/canal13" class="icono-red facebook" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/canal13" class="icono-red twitter" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/canal13" class="icono-red instagram" target="_blank">Instagram</a>
         </div>
-
-
     </footer>
+
     
 </body>
 </html>
